@@ -7,7 +7,7 @@ import App from "./App"
 export default () => (
   <HashRouter>
     <Switch>
-      <Route path="/" component={App} />
+      <Route exact path="/" component={App} />
       <Route path="interestplace" component={InterestPlace} />
     </Switch>
   </HashRouter>
