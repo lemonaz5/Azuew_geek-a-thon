@@ -7,3 +7,10 @@
   height: 100vh;
 }
 
+.inplace {
+  background-image: url('./components/bg3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}

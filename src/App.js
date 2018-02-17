@@ -13,14 +13,14 @@ class App extends Component {
       <div className="App">
       <MuiThemeProvider>
         <AppBar
-          style={{backgroundColor:'#8D6E63',}}
+          style={{backgroundColor:'#8D6E63',width:'100%'}}
           title="Capet walk"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
         />
         <div style={{height: '200px'}}/>
         <div style={{textAlign: 'center', backgroundColor:'white', padding:'50px',opacity: '0.9'}}>
           <SearchBar />
-          <RaisedButton label="Search" style={{marginTop:'15px'}}><Link to="/interestplace"></Link></RaisedButton>
+          <Link to="/interestplace"><RaisedButton label="Search" style={{marginTop:'15px'}}></RaisedButton></Link>
         </div>
         </MuiThemeProvider>
       </div>
