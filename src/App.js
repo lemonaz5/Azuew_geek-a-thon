@@ -4,7 +4,7 @@ import SearchBar from './components/search_bar'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import style from './App.css'
-import { Link, Router, Route, hashHistory } from 'react-router-dom'
+import { Link, Router, Route } from 'react-router-dom'
 
 class App extends Component {
   render() {

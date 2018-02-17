@@ -3,9 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
-import routes from './routes';
-import { Router, hashHistory } from 'react-router'
+import Routes from './routes';
 
 ReactDOM.render(
-<Router history={hashHistory} route={routes}/>, document.getElementById('root'));
+    Routes(), document.getElementById('root'));
 registerServiceWorker();

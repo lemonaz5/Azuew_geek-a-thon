@@ -1,11 +1,14 @@
 import React from 'react'
-import { Route,Router } from "react-router";
+import { Route } from "react-router";
+import { HashRouter, Switch } from 'react-router-dom';
 import InterestPlace from "./InterestPlace";
 import App from "./App"
 
-export default (
-  <Router path="/" component={App}>
-    {/* <IndexRoute component={} /> */}
-    <Route path="interestplace" component={InterestPlace} />
-  </Router>
+export default () => (
+  <HashRouter>
+    <Switch>
+      <Route path="/" component={App} />
+      <Route path="interestplace" component={InterestPlace} />
+    </Switch>
+  </HashRouter>
 );
