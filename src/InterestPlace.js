@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 
 export default class InterestPlace extends Component{
-  render(){
+  render() {
     return(
-      <div></div>
+      <div>
+        This is Interest Place
+      </div>
     )
   }
 }
