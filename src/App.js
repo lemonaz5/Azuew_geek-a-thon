@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import AppBar from 'material-ui/AppBar';
 import SearchBar from './components/search_bar'
+import MapContainer from './components/map'
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import style from './App.css'
@@ -20,6 +21,7 @@ class App extends Component {
         <div style={{height: '200px'}}/>
         <div style={{textAlign: 'center', backgroundColor:'white', padding:'50px',opacity: '0.9'}}>
           <SearchBar />
+          <MapContainer />
           <RaisedButton label="Search" style={{marginTop:'15px'}}><Link to="/interestplace"></Link></RaisedButton>
         </div>
         </MuiThemeProvider>
