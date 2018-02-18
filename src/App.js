@@ -14,11 +14,10 @@ class App extends Component {
       <MuiThemeProvider>
         <AppBar
           style={{backgroundColor:'#8D6E63',width:'100%'}}
-          title="Capet walk"
+          title="Carpet walk"
           iconClassNameRight="muidocs-icon-navigation-expand-more"
         />
-        <div style={{height: '200px'}}/>
-        <div style={{textAlign: 'center', backgroundColor:'white', padding:'50px',opacity: '0.9'}}>
+        <div className="block">
           <SearchBar />
           <Link to="/interestplace"><RaisedButton label="Search" style={{marginTop:'15px'}}></RaisedButton></Link>
         </div>

@@ -30,7 +30,7 @@ export default class SearchBar extends React.Component {
       handleUpdateInput = (value) => {
         this.setState({
           dataName: [
-            'Bangkok','Japan','London','Hamburg'
+            'bangkok','japan','london','hamburg'
           ],
         });
         console.log(this.state.dataName)

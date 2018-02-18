@@ -61,8 +61,6 @@ const tableData = [
 
 export default class InterestPlace extends Component{
   state = {
-    fixedHeader: true,
-    fixedFooter: false,
     stripedRows: false,
     showRowHover: true,
     selectable: false,
@@ -70,7 +68,6 @@ export default class InterestPlace extends Component{
     enableSelectAll: false,
     deselectOnClickaway: false,
     showCheckboxes: false,
-    height: '300px',
   };
 
   handleToggle = (event, toggled) => {
@@ -93,19 +90,15 @@ export default class InterestPlace extends Component{
               title="Capet walk"
               iconClassNameRight="muidocs-icon-navigation-expand-more"
             />
-            <br/>
             <Link to="/"><RaisedButton label="Back" fullWidth={true} /></Link>
             <br style={{height: '20px'}}/>
-            <div className="row">
+            <span className="row">
+              <br/> <br/> <br/>
               <div className="col">
                 <div>
                   <Table
                     style={{opacity:'0.7'}}
-                    height={this.state.height}
-                    fixedHeader={this.state.fixedHeader}
-                    fixedFooter={this.state.fixedFooter}
-                    selectable={this.state.selectable}
-                    multiSelectable={this.state.multiSelectable}
+                    fixedHeader='true'
                   >
                     <TableHeader
                       displaySelectAll={this.state.showCheckboxes}
@@ -113,15 +106,15 @@ export default class InterestPlace extends Component{
                       enableSelectAll={this.state.enableSelectAll}
                     >
                       <TableRow>
-                        <TableHeaderColumn tooltip="The ID">ID</TableHeaderColumn>
-                        <TableHeaderColumn tooltip="The Name">Name</TableHeaderColumn>
-                        <TableHeaderColumn tooltip="The Status">Status</TableHeaderColumn>
+                        <TableHeaderColumn>ID</TableHeaderColumn>
+                        <TableHeaderColumn>Name</TableHeaderColumn>
+                        <TableHeaderColumn>Status</TableHeaderColumn>
                       </TableRow>
                     </TableHeader>
                     <TableBody
                       displayRowCheckbox={this.state.showCheckboxes}
                       deselectOnClickaway={this.state.deselectOnClickaway}
-                      showRowHover={this.state.showRowHover}
+                      showRowHover='true'
                       stripedRows={this.state.stripedRows}
                     >
                       {tableData.map( (row, index) => (
@@ -135,7 +128,10 @@ export default class InterestPlace extends Component{
                   </Table>
                   </div>
                 </div>
-              </div>
+                <div className="col" style={{height:'300px'}}>
+                  For map
+                </div>
+              </span>
             </div>
         </MuiThemeProvider>
       </div>
