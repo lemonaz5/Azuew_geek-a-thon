@@ -3,6 +3,7 @@ import AppBar from 'material-ui/AppBar';
 import RaisedButton from 'material-ui/RaisedButton';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import style from './App.css'
+import MapContainer from './components/map'
 import Link from 'react-router-dom/Link';
 import {
   Table,
@@ -128,8 +129,8 @@ export default class InterestPlace extends Component{
                   </Table>
                   </div>
                 </div>
-                <div className="col" style={{height:'300px'}}>
-                  For map
+                <div className="col" >
+                  <MapContainer />
                 </div>
               </span>
             </div>

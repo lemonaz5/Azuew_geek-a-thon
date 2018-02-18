@@ -31,8 +31,15 @@
   width: 48%;
   background-color: white;
   float:left;
+  opacity: 0.95;
+}
+
+.col > div > div {
+  width: 48vw !important;
+  height: 60vh !important;
 }
 
 .row {
   text-align: center;
+  overflow: hidden;
 }
