@@ -5,5 +5,34 @@
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  position: relative;
 }
 
+.inplace {
+  background-image: url('./components/bg3.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.block {
+  text-align: center;
+  background-color:white;
+  padding:80px;
+  opacity: 0.9;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.col {
+  margin: 1%;
+  width: 48%;
+  background-color: white;
+  float:left;
+}
+
+.row {
+  text-align: center;
+}
